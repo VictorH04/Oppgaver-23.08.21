@@ -26,53 +26,49 @@ for (let i = 0; i < myArray.length; myArray++) {
 
 // Oppgave 9 & 10
 console.log("Oppgave 9 & 10");
-if (myNumber = 1) {
-    console.log("Number does not equal 0");
-} else {
-    console.log("Number is equal 0");
-}
+myNumber != 0 ? console.log("Number does not equal 0") : console.log("Number is equal 0");
 
 // Oppgave 11
 console.log("Oppgave 11");
 const handleSum = (sum1, sum2) => {
-    console.log(sum1 + sum2);
+    return sum1 + sum2;
 }
-handleSum(10, 15);
+console.log(handleSum(10, 15));
 
 // Oppgave 12
 console.log("Oppgave 12");
 const handleAreal = (num1, num2) => {
-    console.log(num1 * num2);
+    return num1 * num2;
 }
-handleAreal(10, 5);
+console.log(handleAreal(10, 5));
 
 // Oppgave 13
 console.log("Oppgave 13");
 const handleVolumeSphere = (r) => {
-    console.log(`Volum Sphære: ${4 * Math.PI * r * r * r / 3}`);
+    return `Volum Sphære: ${4 / 3 * Math.PI * r^3}`;
 }
-handleVolumeSphere(5);
+console.log(handleVolumeSphere(3));
 
 // Oppgave 14
 console.log("Oppgave 14");
 const handleCircleDiameter = (r) => {
-    console.log(`Circle diameter: ${2 * r}`);
+    return `Circle diameter: ${2 * r}`;
 }
-handleCircleDiameter(3);
+console.log(handleCircleDiameter(3));
 
 // Oppgave 15
 console.log("Oppgave 15");
 const handleCircleCircumference = (diameter) => {
-    console.log(`Circle Circumference: ${Math.PI * diameter}`);
+    return `Circle Circumference: ${Math.PI * diameter}`;
 }
-handleCircleCircumference(3);
+console.log(handleCircleCircumference(3));
 
 // Oppgave 16
 console.log("Oppgave 16");
 const handleCircleAreal = (r) => {
-    console.log(`Circle areal: ${Math.PI * r * 2}`);
+    return `Circle area: ${Math.PI * r^2}`;
 }
-handleCircleAreal(5);
+console.log(handleCircleAreal(2));
 
 // Oppgave 17
 console.log("Oppgave 17");
@@ -90,30 +86,30 @@ checkNumber(5);
 // Oppgave 18
 console.log("Oppgave 18");
 const checkWholeNumber = (num1, num2) => {
-    (num1 >= 10) ? console.log("True") : console.log("False");
-    (num2 >= 10) ? console.log("True") : console.log("False");
+    (num1 >= 10) ? console.log("True"): console.log("False");
+    (num2 >= 10) ? console.log("True"): console.log("False");
 }
 checkWholeNumber(9, 15);
 
 // Oppgave 19
 console.log("Oppgave 19");
-const sumArrayIntegers = (int1, int2, int3, int4) => {
-    const array = [int1, int2, int3, int4];
+const array = [1, 1, 1, 10];
+const sumArrayIntegers = (arr) => {
     let sum = 0;
 
-    for (let i = 0; i < array.length; i++) {
-        sum += array[i];
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
     }
 
-    console.log(sum);
+    return sum;
 }
-sumArrayIntegers(1, 2, 3, 4);
+console.log(sumArrayIntegers(array));
 
 // Oppgave 20
 console.log("Oppgave 20");
 const sumNumbersRange = (min, max) => {
     let sum = 0;
-    for (i = min; i < max+1; i++) {
+    for (i = min; i < max + 1; i++) {
         sum += i;
     }
 
