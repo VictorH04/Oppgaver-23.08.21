@@ -45,7 +45,7 @@ console.log(handleAreal(10, 5));
 // Oppgave 13
 console.log("Oppgave 13");
 const handleVolumeSphere = (r) => {
-    return `Volum Sphære: ${4 / 3 * Math.PI * r^3}`;
+    return `Volum Sphære: ${4 / 3 * Math.PI * Math.pow(r, 3)}`;
 }
 console.log(handleVolumeSphere(3));
 
@@ -66,7 +66,7 @@ console.log(handleCircleCircumference(3));
 // Oppgave 16
 console.log("Oppgave 16");
 const handleCircleAreal = (r) => {
-    return `Circle area: ${Math.PI * r^2}`;
+    return `Circle area: ${Math.PI * Math.pow(r, 2)}`;
 }
 console.log(handleCircleAreal(2));
 
